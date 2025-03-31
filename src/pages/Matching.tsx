@@ -23,7 +23,7 @@ import {
   BarChart
 } from "lucide-react";
 import { useState, useEffect } from "react";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 import { 
   findTopMatches, 
   findMatchesForProduct, 
