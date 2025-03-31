@@ -22,7 +22,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
           <div className="flex h-16 items-center border-b px-6">
             <SidebarTrigger />
             <div className="ml-4 flex-1 flex items-center justify-between">
-              <h1 className="text-lg font-semibold">ValorizeHub</h1>
+              <h1 className="text-lg font-semibold">REENX</h1>
               <div className="flex items-center gap-4">
                 <span className="text-sm text-muted-foreground">
                   Valorisez vos stocks dormants

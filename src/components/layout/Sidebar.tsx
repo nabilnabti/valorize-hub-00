@@ -6,7 +6,8 @@ import {
   Users, 
   PieChart, 
   Home, 
-  Settings 
+  Settings,
+  Leaf
 } from "lucide-react";
 import {
   Sidebar,
@@ -51,6 +52,11 @@ const navigationItems = [
     href: "/matching"
   },
   {
+    title: "Impact CO2",
+    icon: Leaf,
+    href: "/carbon-impact"
+  },
+  {
     title: "Reporting",
     icon: PieChart,
     href: "/reporting"
@@ -65,9 +71,9 @@ const AppSidebar = () => {
       <SidebarHeader className="py-6">
         <div className="flex items-center justify-center gap-2 px-4">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-valorize-500">
-            <span className="text-xl font-bold text-white">V</span>
+            <span className="text-xl font-bold text-white">R</span>
           </div>
-          <span className="text-xl font-bold text-white">ValorizeHub</span>
+          <span className="text-xl font-bold text-white">REENX</span>
         </div>
       </SidebarHeader>
       <SidebarContent>

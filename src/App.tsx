@@ -10,6 +10,7 @@ import Upload from "./pages/Upload";
 import Recommendations from "./pages/Recommendations";
 import Matching from "./pages/Matching";
 import Reporting from "./pages/Reporting";
+import CarbonImpact from "./pages/CarbonImpact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/upload" element={<Upload />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/matching" element={<Matching />} />
+          <Route path="/carbon-impact" element={<CarbonImpact />} />
           <Route path="/reporting" element={<Reporting />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

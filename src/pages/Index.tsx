@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, BarChart, ListChecks, Users, Upload, PieChart } from "lucide-react";
+import { ArrowRight, BarChart, ListChecks, Users, Upload, PieChart, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 import MainLayout from "@/components/layout/MainLayout";
 
@@ -35,6 +35,13 @@ const features = [
     color: "bg-amber-100 text-amber-700"
   },
   {
+    title: "Impact CO2",
+    description: "Calculez l'empreinte carbone économisée grâce à la valorisation de vos stocks",
+    icon: Leaf,
+    href: "/carbon-impact",
+    color: "bg-green-100 text-green-700"
+  },
+  {
     title: "Reporting & Suivi",
     description: "Analysez vos statistiques de valorisation pour mesurer votre ROI",
     icon: PieChart,
@@ -49,8 +56,8 @@ const Index = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">
-            <span className="text-valorize-600">Valorize</span>
-            <span className="text-eco-600">Hub</span>
+            <span className="text-valorize-600">RE</span>
+            <span className="text-eco-600">ENX</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Plateforme de valorisation des stocks dormants pour une économie circulaire efficace
