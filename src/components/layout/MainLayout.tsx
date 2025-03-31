@@ -13,8 +13,8 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
   return (
     <SidebarProvider
-      onCollapseChange={(collapsed) => setIsCollapsed(collapsed)}
-      defaultCollapsed={false}
+      defaultOpen={!isCollapsed}
+      onOpenChange={(open) => setIsCollapsed(!open)}
     >
       <div className="min-h-screen flex w-full">
         <AppSidebar />
