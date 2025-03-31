@@ -67,17 +67,17 @@ export default {
 					950: '#082f49',
 				},
 				eco: {
-					50: '#f0fdf4',
-					100: '#dcfce7',
-					200: '#bbf7d0',
-					300: '#86efac',
-					400: '#4ade80',
-					500: '#22c55e',
-					600: '#16a34a',
-					700: '#15803d',
-					800: '#166534',
-					900: '#14532d',
-					950: '#052e16',
+					50: '#ecfdf4',
+					100: '#d1fadf',
+					200: '#a6f4c0',
+					300: '#6ee79a',
+					400: '#36d374',
+					500: '#16b75a',
+					600: '#0f954a',
+					700: '#10753d',
+					800: '#115c33',
+					900: '#104c2c',
+					950: '#032b19',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -116,6 +116,9 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			scale: {
+				'102': '1.02',
 			}
 		}
 	},

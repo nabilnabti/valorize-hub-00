@@ -11,21 +11,21 @@ const features = [
     description: "Visualisez en temps réel vos stocks dormants par catégorie, valeur et état",
     icon: BarChart,
     href: "/dashboard",
-    color: "bg-valorize-100 text-valorize-700"
+    color: "bg-primary/10 text-primary"
   },
   {
     title: "Import de stocks",
     description: "Importez vos stocks manuellement depuis Excel ou via une API ERP",
     icon: Upload,
     href: "/upload",
-    color: "bg-blue-100 text-blue-700"
+    color: "bg-secondary/10 text-secondary"
   },
   {
     title: "Recommandations",
     description: "Obtenez des recommandations de valorisation pour vos stocks dormants",
     icon: ListChecks,
     href: "/recommendations",
-    color: "bg-eco-100 text-eco-700"
+    color: "bg-eco-500/10 text-eco-600"
   },
   {
     title: "Matching",
@@ -54,30 +54,30 @@ const Index = () => {
   return (
     <MainLayout>
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">
-            <span className="text-valorize-600">RE</span>
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold tracking-tight mb-4">
+            <span className="text-primary">RE</span>
             <span className="text-eco-600">ENX</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Plateforme de valorisation des stocks dormants pour une économie circulaire efficace
           </p>
-          <div className="mt-8">
-            <Button asChild size="lg" className="bg-valorize-600 hover:bg-valorize-700">
-              <Link to="/dashboard">
+          <div className="mt-10">
+            <Button asChild size="lg" variant="eco" className="hover-scale">
+              <Link to="/dashboard" className="flex items-center">
                 Commencer maintenant
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature) => (
-            <Card key={feature.title} className="overflow-hidden transition-all hover:shadow-md">
+            <Card key={feature.title} className="overflow-hidden hover-scale glass-card">
               <CardHeader className="pb-2">
-                <div className={`p-2 w-12 h-12 rounded-lg flex items-center justify-center ${feature.color} mb-2`}>
-                  <feature.icon className="h-6 w-6" />
+                <div className={`p-3 w-14 h-14 rounded-xl flex items-center justify-center ${feature.color} mb-3`}>
+                  <feature.icon className="h-7 w-7" />
                 </div>
                 <CardTitle>{feature.title}</CardTitle>
                 <CardDescription>{feature.description}</CardDescription>

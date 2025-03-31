@@ -19,10 +19,13 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <div className="min-h-screen flex w-full">
         <AppSidebar />
         <main className="flex-1 overflow-hidden">
-          <div className="flex h-16 items-center border-b px-6">
+          <div className="flex h-16 items-center border-b px-6 bg-card/70 backdrop-blur-sm sticky top-0 z-10">
             <SidebarTrigger />
             <div className="ml-4 flex-1 flex items-center justify-between">
-              <h1 className="text-lg font-semibold">REENX</h1>
+              <h1 className="text-lg font-semibold">
+                <span className="text-primary">RE</span>
+                <span className="text-eco-600">ENX</span>
+              </h1>
               <div className="flex items-center gap-4">
                 <span className="text-sm text-muted-foreground">
                   Valorisez vos stocks dormants
@@ -30,7 +33,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
               </div>
             </div>
           </div>
-          <div className={cn("px-6 py-6", isCollapsed ? "ml-20" : "ml-64")}>
+          <div className={cn("p-8", isCollapsed ? "ml-20" : "ml-64")}>
             {children}
           </div>
         </main>
