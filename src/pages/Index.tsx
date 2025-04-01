@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, BarChart, ListChecks, Users, Upload, PieChart, Leaf, LogIn, UserPlus } from "lucide-react";
+import { ArrowRight, BarChart, ListChecks, Users, Upload, PieChart, Leaf, LogIn, UserPlus, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import MainLayout from "@/components/layout/MainLayout";
 
@@ -79,6 +79,12 @@ const Index = () => {
               <Link to="/register" className="flex items-center">
                 <UserPlus className="mr-2 h-5 w-5" />
                 S'inscrire
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="default" className="hover-scale">
+              <Link to="/company-register" className="flex items-center">
+                <Building className="mr-2 h-5 w-5" />
+                Inscrire une entreprise
               </Link>
             </Button>
           </div>
