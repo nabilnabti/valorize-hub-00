@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, BarChart, ListChecks, Users, Upload, PieChart, Leaf } from "lucide-react";
+import { ArrowRight, BarChart, ListChecks, Users, Upload, PieChart, Leaf, LogIn, UserPlus } from "lucide-react";
 import { Link } from "react-router-dom";
 import MainLayout from "@/components/layout/MainLayout";
 
@@ -62,11 +62,23 @@ const Index = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Plateforme de valorisation des stocks dormants pour une économie circulaire efficace
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-4 justify-center">
             <Button asChild size="lg" variant="eco" className="hover-scale">
               <Link to="/dashboard" className="flex items-center">
                 Commencer maintenant
                 <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="hover-scale">
+              <Link to="/login" className="flex items-center">
+                <LogIn className="mr-2 h-5 w-5" />
+                Connexion
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="secondary" className="hover-scale">
+              <Link to="/register" className="flex items-center">
+                <UserPlus className="mr-2 h-5 w-5" />
+                S'inscrire
               </Link>
             </Button>
           </div>
